@@ -1,0 +1,219 @@
+
+/* EVERYTHING IN THE HEADER */
+.top-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    margin:0;
+    background-color: #FFCDEA;
+    background-size: cover;
+    color: #86469C;
+}
+
+.goma-header{
+    width: 358px;
+    height: auto;
+    padding:0;
+}
+
+.peach-header{
+    width: 360px;
+    height: auto;
+    padding:0;
+    margin:0;
+    float: right
+    /* position: absolute; */
+}
+
+.maccies-header{
+    width: 30%;
+    height: auto;
+    padding:0;
+    position: absolute;
+    bottom: 0;
+    left:35%
+
+}
+
+
+.caveat {
+    font-family: "Caveat", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5.5rem;
+    flex-grow: 1; /* Allows the text container to take up any remaining space */
+    /* margin: 0 20px; Adds some space on the left and right */
+  }
+  
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+/* ##################################################################################### */
+   
+
+/* EVERYTHING IN THE BODY */
+.profile-picture{
+    border-radius: 50%;
+}
+
+.middle-container{
+    font-family: "PT Serif", serif;
+    color:#000;
+}
+
+.montserrat-body {
+    color:#86469C;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.pt-serif-regular {
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+    border: dotted #FFCDEA 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 80px auto;
+}
+
+.skills-column{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.grid-text{
+    padding: 20px;
+}
+
+.skill-header{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #86469C;
+}
+
+.skill-description{
+    font-size: 1.1rem;
+}
+  
+.grid-picture>img{
+    height: 250px;
+    width: 250px;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.educationtable{
+    color:#000;
+    padding: 10px;
+}
+
+.list-group{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.list-group-horizontal, .list-group-horizontal-sm {
+    
+    display: flex; /* Make the list display as a flex container */
+    justify-content: space-around; /* Center the list items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  .list-group-item {
+    padding: 10px; /* Add some padding to list items */
+    border: 1px solid #ccc; /* Add border for visual structure */
+    margin: 20px; /* Add some space between list items */
+  }
+
+.educationtableheader{
+    background-color: #BC7FCD;
+}
+
+.educationtable{
+    width:80%;
+}
+
+.educationtable>thead{
+    background-color: #BC7FCD;
+}
+.educationtable th, .educationtable td {
+    border: 1px solid #000; /* Creates a solid border */
+    padding: 15px; /* Increases padding inside the cells */
+    text-align: left; /* Adjust text alignment as needed */
+  }
+
+.stinky{
+    border-radius: 50%;
+    height: 200px;
+}
+
+/* ##################################################################################### */
+/* EVERYTHING IN THE FOOTER */
+.footer-container{
+    color: #86469C;
+     display: flex; /* Enables Flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers the items in the container */
+    padding: 20px; /* Example padding */
+    background-color: #FFCDEA;
+}
+
+.footer-info{
+    flex-grow: 1; /* Allows text to grow and fill available space, pushing the image to the right */
+    text-align: center; /* Centers the text */
+}
+
+.contact-me{
+    font-size:1.5rem;
+}
+
+.goma-footer{
+    width: 200px;
+    padding:0;
+    margin:0;
+    float: right
+}
+/* ##################################################################################### */
+@media (max-width: 600px) { /* Adjusts for screens up to 600px wide */
+    .peach-header {
+      display: none; /* Hides the image on mobile devices */
+    }
+
+    .goma-header {
+        display: none; /* Hides the image on mobile devices */
+    }
+
+    .skills-column{
+        grid-template-columns: 1fr;
+    }
+
+    .skill-description{
+        font-size: .85rem;
+    }
+
+    .list-group-item {
+        padding: 10px; /* Add some padding to list items */
+        border: 1px solid #ccc; /* Add border for visual structure */
+      }
+  }
